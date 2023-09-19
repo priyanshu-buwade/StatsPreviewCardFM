@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+* {
+    font-family: 'Lexend Deca', display;
+}
+
+body {
+    background: hsl(233, 47%, 7%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 95vh;
+}
+
+h1,
+h2,
+a {
+    font-family: 'Inter', sans-serif;
+}
+
+h1,
+a {
+    font-weight: 700;
+    font-size: 35px;
+}
+
+p {
+    font-size: 15px;
+    font-weight: 400;
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 30px;
+}
+
+a {
+    color: hsl(277, 64%, 61%);
+}
+
+.layout {
+    background: hsl(244, 38%, 16%);
+    color: hsl(0, 0%, 100%);
+    width: 1110px;
+    height: 445px;
+    display: flex;
+    border-radius: 10px;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.grow1 {
+    flex-grow: 1;
+}
+
+.description {
+    width: 420px;
+    padding: 0 75px;
+}
+
+.description p {
+    width: 90%;
+}
+
+.stats {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.inner-stats h2 {
+    color: hsl(0, 0%, 100%);
+}
+
+.inner-stats p {
+    font-size: 13px;
+    margin-top: -20px;
+    color: hsla(0, 0%, 100%, 0.6);
+}
+
+.image-section {
+    width: 540px;
+    height: 100%;
+    background-color: hsl(277, 64%, 61%);
+    background-image: url("images/image-header-desktop.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+}
+
+@media screen and (max-width: 1126px) {
+    body {
+        height: 100%;
+        text-align: center;
+    }
+
+    h1,
+    a {
+        font-size: 30px;
+    }
+
+    .layout {
+        width: 330px;
+        height: 100%;
+    }
+
+    .description {
+        width: 330px;
+        padding: 10px 25px;
+    }
+
+    .description p {
+        width: 100%;
+    }
+
+    .stats {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .inner-stats {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-section {
+        height: 240px;
+        width: 330px;
+        background-image: url("images/image-header-mobile.jpg");
+    }
+}
